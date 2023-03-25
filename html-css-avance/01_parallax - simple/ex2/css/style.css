@@ -1,0 +1,83 @@
+/* Style Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /*L'image de fond*/
+  background: url(../img/ciel.jpg);
+  /* La hauteur de l'image */
+  height: 100%;
+  /*Les propriétés qui vont créés l'effet parallax au scroll */
+  background-attachment: fixed;
+  /*Attache l'image par rapport à l'écran afin d'éviter qu'elle ne défilé au moment du scroll*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax:last-child {
+  /*L'image de fond*/
+  background: url(../img/pc.jpg);
+  /* La hauteur de l'image */
+  height: 100%;
+  /*Les propriétés qui vont créés l'effet parallax au scroll */
+  background-attachment: fixed;
+  /*Attache l'image par rapport à l'écran afin d'éviter qu'elle ne défilé au moment du scroll*/
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.scroll {
+  height: 280px;
+  font-size: 36px;
+}
+
+div.scroll p {
+  margin: 0;
+}
+
+#scroll-1 {
+  background-image: url('../img/sans-titre.png');
+  /*background-image: -webkit-gradient(linear,
+    left bottom,
+    right bottom,
+    color-stop(0, rgb(230, 18, 18)),
+    color-stop(0, rgb(255, 202, 63)),
+    color-stop(0, rgb(63, 201, 50)),
+    color-stop(0, rgb(33, 54, 237)));
+  background-image: -webkit-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 0%, rgb(63, 201, 50) 50%, rgb(33, 54, 237) 100%);*/
+}
+
+#scroll-2 {
+  background-image: url(../img/thumb-1920-515590.jpg);
+}
+
+#scroll-3 {
+  background-image: url(../img/Matrix-revolution.jpg);
+  /*background-image: -webkit-gradient(
+linear,
+left bottom,
+right bottom,
+color-stop(0, rgb(230, 18, 18)),
+color-stop(1, rgb(255, 202, 63))
+);
+background-image: -o-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+background-image: -moz-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+background-image: -webkit-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+background-image: -ms-linear-gradient(right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+background-image: linear-gradient(to right, rgb(230, 18, 18) 0%, rgb(255, 202, 63) 100%);
+*/
+}
+
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}

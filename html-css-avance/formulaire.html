@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ma page formulaire</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <meta name="description" content="Mon formulaire en HTML/CSS">
+        <meta charset="UTF-8">
+    </head>
+
+
+    <body>
+
+        <header>
+            <div id="logo">
+                <a href="#logo">
+                    <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                </a>
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div id="slogan"><h1>Mon premier site en HTML/CSS</h1></div>
+            <div id="social">
+                <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="clear"></div>
+        </header>
+
+        <nav>
+            <div class="ancreNav">
+                <a href="index.html">Structure</a>
+                <a href="texte.html">Texte</a>
+                <a href="selecteur.html">Selecteur</a>
+                <a href="image.html">Image</a>
+                <a href="position.html">Position</a>
+                <a href="zoning.html">Zoning</a>
+                <a href="tableau.html">Tableau</a>
+                <a href="liste.html">Liste</a>
+                <a href="lien_menu.html">Lien & menu</a>
+                <a href="formulaire.html" class="activ">Formulaire</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="animation.html">Animation</a>
+            </div>
+        </nav>
+        <main>
+            <h2>Formulaire</h2>
+            <section class="formulaire">
+                <!--Method : maniéres de circulation des données-->
+                <!--Action : url de destination-->
+                <!--Action : permet d'envoyé un fichier correctement ( encodage)-->
+                <form method="post" action="url de destination" enctype="multipart/form-data">
+                    <label for="pseudo">Pseudo *</label>
+                    <input type="text" id="pseudo" name="pseudo" required><br>
+
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Taper votre pseudo"><br>
+
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="mdp" name="mdp"><br>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email"><br>
+
+                    <label for="cv">CV</label>
+                    <input type="file" id="cv" name="cv"><br>
+
+                    <p>Quel sont vos fruits préférés ?</p>
+                    <label for="orange">Orange</label>
+                    <input type="checkbox" id="orange" value="orange" checked>
+                    <label for="fraise">Fraise</label>
+                    <input type="checkbox" id="fraise" value="fraise">
+                    <label for="poire">Poire</label>
+                    <input type="checkbox" id="poire" value="poire"><br>
+
+                    <label for="cp">Code postal</label>
+                    <input type="text" id="cp" name="cp" maxlength="5" pattern="[0-9]{5}" title="5 chiffres entre 0 et 9"><br>
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" cols="25"></textarea><br>
+
+                    <input type="submit" name="envoyer" value="Envoyer">
+                    <input type="reset" name="annuler" value="Annuler">
+                </form>
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+
+</html>

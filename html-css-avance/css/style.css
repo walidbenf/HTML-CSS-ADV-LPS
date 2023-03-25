@@ -1,0 +1,1006 @@
+*{
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body{
+    background-image: url(../img/concrete-texture.png);
+    /*Effet de scroll lorsqu'on clique sur une ancre mais ne marche que sur FireFox
+    scroll-behavior: smooth;*/
+}
+h1{
+    font-size: 45px;
+    font-family: 'Anton', sans-serif;
+    color:#2980b9;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 35px;
+    color:#2c3e50;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+}
+h3{
+    font-size: 22px;
+    color:#2c3e50;
+    padding: 15px;
+    text-shadow: 1px 1px 2px #aaa;
+}
+h4{
+    text-align: center;
+    margin-top: 30px;
+}
+blockquote{
+    font-style: italic;
+    font-size: 120%;
+}
+strong{
+    font-weight: bold;
+
+}
+/**************HEADER INDEX****************/
+header{
+    background: #2c3e50;
+    height: 175px;
+}
+#logo{
+    float: left;
+    width: 25%;
+    background: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+#slogan{
+    float: left;
+    width: 50%;
+    background: #2c3e50;
+    padding-top: 50px;
+}
+#social{
+    float: left;
+    width: 25%;
+}
+#social i{
+    background: #2c3e50;
+    font-size: 30px;
+    text-align: right;
+    padding: 15px 30px 0 0;
+    display: block;
+}
+header a{
+    color: #10828C;
+    text-decoration: none;
+}
+
+/*******************FIN HEADER*********************/
+/**************DEBUT NAV********************/
+nav {
+    background :#2980b9;
+    height: 70px;
+    border-bottom: 8px solid #6ACAFC;
+    text-align: center;
+    padding: 15px;
+}
+nav a{
+    margin: 10px;
+    padding: 2px 10px;
+    border-radius: 10px 0px;
+    border : 2px solid white;
+    background:  #6ACAFC;
+    color: #2c3e50;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: oswald;
+    transition: 0.5s;
+}
+nav a:hover{
+    background: #A6D6C3;
+    color: white;
+}
+.activ{
+    background: #2c3e50;
+    color: white ;
+}
+/**************FIN NAV********************/
+/*FAIRE LE ZONING AVEC DES HAUTEUR ET LARGEUR AVANT DE PLACER LES ELEMENTS DANS LES ZONES POUR ENSUITE SUPPRIMER LES HAUTEURS*/
+main{
+    background: rgba(178,178,178,0.30);
+    width: 1000px;
+    margin: 0 auto;
+}
+aside{
+    height: 250px;
+    background: #A6D6C3;
+}
+section{
+    margin-top: 50px;
+    /*background: #DAF7A6;*/
+    padding: 20px;
+}
+footer{
+    background: #2980b9;
+    height: 30px;
+}
+
+/**************DEBUT PAGE TEXTE********************/
+.oswald p{
+    font-family: 'Oswald', sans-serif;
+}
+/****************FIN PAGE TEXTE********************/
+
+
+/****************DEBUT PAGE SELECTEURS*************/
+.select p{
+    color: red;
+}
+.select p:first-of-type{
+    color: pink;
+}
+.select p:last-of-type{
+    color: pink;
+}
+.select p:nth-of-type(5), .select p:nth-of-type(6){
+    color:black;
+}
+.select div:not(.zoneB){
+    font-weight: bold;
+}
+.select .zoneA{
+    color: #f56f56;
+}
+.select .zoneB{
+    color: #996633;
+}
+.select .zoneB .couleurBleu{
+    color: blue;
+    font-size: 16px;
+}
+.select #zoneC{
+    color: #98f32f;
+}
+.select #zoneD span{
+    color: #32ff32;
+    font-size: 30px;
+    font-style: italic;
+}
+/****************FIN PAGE SELECTEURS***************/
+
+
+/****************DEBUT PAGE IMAGE********************/
+.imageFond{
+    background:#000 url(../img/fond.jpg) no-repeat;
+    background-size: cover;
+}
+.imageFond p{
+    width: 75%;
+    margin: 100px auto 200px auto;
+    background: rgba(255,255,255,0.60);
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 10px;
+}
+img[src="img/toureiffel.jpg"]{
+    margin:auto;
+    width: 250px;
+    display:block;
+}
+.rotationImg{
+    text-align: center;
+}
+.image{
+    margin: 20px;
+    border: 5px solid #eee;
+/*rgba sera utiliser dans ce cas pour cree une ombre à mon image*/
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    transition: 1s;
+}
+.image:hover{
+    transform: rotate(-7deg);
+    border: 15px solid #eee;
+}
+.rotation360:hover{
+    transform: rotate(-360deg);
+}
+/********************FIN PAGE IMAGE******************/
+
+
+/********************DEBUT PAGE POSITION******************/
+/*********ABSOLUTE********/
+.centre{
+    margin: 0 auto;
+    width: 500px;
+    height: 200px;
+    background: #33cccc;
+}
+.absolute{
+    position:absolute;
+    top:24%;
+    left: 10%;
+    background: orange;
+    width: 100px;
+    height: 100px;
+}
+/*******RELATIVE*******/
+.relative{
+    background: #2D5C7F;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    bottom: 10px;
+    left: 100px;
+}
+.relative div{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: #FFF1A8;
+}
+button{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor:pointer;
+    border: none;
+    background: transparent;
+    font-size: 350%;
+    color: #2c3e50;
+}
+.trente{
+    width: 30%;
+    padding: 20px;
+    font-size: 22px;
+    background: #3C1B1F;
+    color: #F6E1B5;
+    font-weight: bold;
+}
+.cinquante{
+    width: 50%;
+    padding: 20px;
+    font-size: 22px;
+    background: #B21E4B;
+    color: #E2BF81;
+    font-weight: bold;
+    margin-top: 7px;
+}
+.cent{
+    width: 100%;
+    padding: 20px;
+    font-size: 22px;
+    background: #E2BF81;
+    color: #B21E4B;
+    font-weight: bold;
+    margin-top: 7px;
+}
+/********************FLOAT*****************************/
+.float{
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    float: left;
+    text-align: center;
+    font-size: 25px;
+    background: #F8D771;
+    border: 2px solid darkred;
+}
+.dernier{
+    height: 170px;
+    width: 170px;
+    margin: 10px;
+    padding-top: 2px;
+    text-align: center;
+    font-size: 25px;
+    background: #F8D771;
+    border: 2px solid darkred;
+}
+
+.clear{
+    clear: both;
+}
+/******************Exercice Float *********************/
+.zone{
+    height: 70px;
+    background: #3a4750;
+}
+.zone1, .zone2, .zone3, .zone4{
+    height: 250px;
+    width: 25%;
+    float: left;
+}
+.zone1{
+    background: #2D5C7F
+;
+}
+.zone2{
+    background: #FFF1A8;
+}
+.zone3{
+    background: #FF8F56;
+}
+.zone4{
+    background: #984A59;
+}
+
+/***********************FLEXBOX*************************/
+.flex{
+    display: flex;
+    /*justify-content: space-around;*/
+    justify-content: space-between;
+    /*flex-direction: column;*/
+    /*flex-direction: row-reverse;*/
+}
+.flex div{
+    width: 150px;
+    height: 150px;
+    background: darkblue;
+    text-align: center;
+    font-size: 50px;
+    color:white;
+}
+/********************FIN PAGE POSITION******************/
+
+
+/************************ZONING*************************/
+/***********************Zoning 1************************/
+#zoning1{
+    background: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    margin: auto;
+}
+#zoning1 header{
+    height: 70px;
+    background: #F7F39A;
+}
+#zoning1 aside{
+    height: 525px;
+    float: left;
+    width: 20%;
+    background: #A3DE83;
+}
+#zoning1 section{
+    float: left;
+    background: #38817A;
+    height: 525px;
+    width: 80%;
+    margin:0;
+    padding: 0;
+}
+
+/**********************Zoning 2 ************************/
+#zoning2{
+    /*On aurais pu taper "zoning2" directement dans le CSS de "zoning1" à la suite sans oublier la virgule*/
+    background: #ffd6d6;
+    width: 500px;
+    text-align: center;
+    text-shadow: 1px 1px 1px darkgrey;
+    margin: auto;
+}
+#zoning2 header{
+    height: 70px;
+    background: #F8F5E4
+;
+}
+#zoning2 aside{
+    height: 525px;
+    float: left;
+    width: 20%;
+    background: #10828C;
+    color: white;
+}
+#zoning2 .middle{
+    float: left;
+    background: #0E3047;
+    height: 525px;
+    width: 60%;
+    margin:0;
+    padding: 0;
+    color: white;
+}
+/**********************Zoning 3*************************/
+#zoning3{
+    background: #ffd6d6;
+    width: 800px;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    color: white;
+    margin: auto;
+}
+#zoning3 section{
+    height: 525px;
+    float: left;
+    width: 50%;
+    background:#205D67;
+    margin: 0;
+    padding: 0;
+}
+#zoning3 footer{
+    height: 70px;
+    float: left;
+    width: 100%;
+    background: #D8EBB5;
+    color: black;
+}
+#zoning3 section:nth-of-type(2){
+    background: #639A67;
+}
+/**********************Zoning 4************************/
+#zoning4{
+    background: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    border: 2px solid black;
+    margin: 0 auto;
+    width: 700px;
+}
+#zoning4 header{
+    height: 90px;
+    background: #D8DFE2;
+}
+#zoning4 nav{
+    height: 50px;
+    background: #71ADB5;
+
+
+}
+#zoning4 section{
+    height: 500px;
+    background: #176D81;
+    margin: 20px;
+    padding: 0;
+}
+#zoning4 footer{
+    height: 75px;
+    background: #0D3446;
+}
+#zoning4 section, footer{
+    color: white;
+}
+/**********************Zoning 5*************************/
+#zoning5{
+    background: #ECEBE9;
+    text-align: center;
+    text-shadow: 1px 1px 2px darkgrey;
+    border: 2px solid black;
+    margin: 0 auto;
+}
+#zoning5 header{
+    height: 90px;
+    background: #F8D771;
+}
+#zoning5 nav{
+    height: 50px;
+    background: #D6BC6B;
+    border-bottom: 8px solid #C19718;
+}
+#zoning5 .section{
+
+    background: #176D81;
+    margin: 20px;
+    padding: 0;
+}
+#zoning5 .section .z1, .z2, .z3, .z4{
+    height: 250px;
+    width: 50%;
+    float: left;
+}
+#zoning5 .z1, .z4{
+    background: #D6BC6B;
+}
+#zoning5 .z2, .z3{
+    background: #FCE38A;
+}
+#zoning5 footer{
+    height: 75px;
+    background: #F8D771;
+}
+#zoning5 section, footer{
+    color: black;
+}
+/***********************Zoning 6************************/
+#zoning6{
+    width: 800px;
+    margin: 0 auto;
+    color: white ;
+    text-align: center;
+}
+#zoning6 header{
+    background: #40a497;
+    height: 180px;
+}
+.haut1{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #203562;
+}
+.haut2{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background: #3E588F;
+}
+.haut3{
+    float: left;
+    width: 25%;
+    height: 100%;
+    background: #203562;
+}
+#zoning6 nav{
+    background: #0B5269;
+    height: 30px;
+    border: none;
+}
+#zoning6 aside{
+    background:#446878;
+    width: 20%;
+    height: 650px;
+    float: left;
+
+}
+#zoning6 section{
+    width: 80%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+.slideshow{
+    background: #314A52;
+    height: 250px;
+}
+#zoning6 .a{
+    background: #C0C5CD;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+#zoning6 .b{
+    background: #203562;
+    width: 50%;
+    height: 250px;
+    float: left;
+}
+#zoning6 .c, .e{
+    background: #C0C5CD;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+#zoning6 .d, .f{
+    background: #203562;
+    width: 25%;
+    height: 150px;
+    float: left;
+}
+#zoning6 footer{
+    background: #0B5269;
+    height: 50px;
+    color: white ;
+}
+
+/***********************FIN ZONING**********************/
+/*************************TABLEAU***********************/
+.tableau table{
+    border-collapse:collapse;
+    border: 2px solid #6495ed;
+    font-weight: bold;
+    margin: auto;
+    width: 80%;
+}
+/*th{
+    border: 1px solid blue;
+    width: 25%;
+}
+td{
+    border: 1px solid blue;
+    font-size: 100%;
+    text-align: center;
+    padding: 5px;
+}*/
+.tableau thead, .tableau tfoot{
+    background: #d0e3fa;
+    border: 1px solid #6495ed;
+}
+.tableau tbody{
+    border: 1px solid #6495ed;
+}
+.tableau th{
+    border: 1px solid #6495ed;
+    padding: 5px;
+    width: 20%;
+}
+.tableau td{
+    border: 1px solid #6495ed;
+    font-size: 80%;
+    padding: 5px;
+    text-align: center;
+}
+
+/**********************FIN TABLEAU***********************/
+/***************************LISTE************************/
+ul.fruit{
+    list-style: none;
+}
+ul.fruit li{
+    display: inline;
+    margin: 15px;
+
+}
+li .fa{
+    font-size: 90%;
+    color: blue;
+}
+li .fa:hover{
+    font-size: 150%;
+    color: darkred;
+}
+.imbriquee, .imbriquee ul{
+    padding-left: 15px;
+}
+.imbriquee{
+    cursor: pointer;
+}
+.imbriquee ul{
+    display: none;
+}
+.europe:hover ul, .asie:hover ul{
+    display: block;
+}
+.imbriquee li ul li:hover{
+        font-size: 200%;
+        background: #E74C3C;
+        display: inline;
+        box-shadow: 5px 10px 10px grey;
+        transition-duration: 1s;
+}
+
+
+/**************************FIN LISTE************************/
+/***************LIEN & MENU*****************/
+/****************styliser les liens************/
+.ancre{
+    text-align: center;
+}
+.ancre a{
+    margin: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background:  #2c3e50;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0px 0px 10px 3px black;
+    font-family: oswald;
+}
+.ancre a:hover{
+    box-shadow: none;
+    transition-duration: 0.5s;
+    text-shadow: 1px 5px 10px grey;
+}
+#lien a{
+    text-decoration: none;
+    color: #2980b9;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+#lien a:hover{
+    color: #f16529;
+}
+/****************MENU*********************/
+#menu nav{
+    background: transparent;
+    border: none;
+}
+#menu ul{
+    list-style: none;
+    text-align: center;
+}
+#menu ul li{
+    display: inline-block;
+}
+#menu nav a{
+    padding: 10px;
+    color: grey;
+    text-decoration: none;
+    background: #ddd;
+    transition: 1s ease-in;
+}
+#menu nav a:hover{
+    color: #fff;
+    background: #069;
+}
+        /*****Menu Déroulant*****/
+#menuDeroulant{
+    height: 650px;
+}
+#menuDeroulant nav{
+    background: transparent;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
+#menuDeroulant nav ul li{
+    float: left;
+    list-style: none;
+    width: 20%;
+}
+#menuDeroulant ul ul{
+    display: none;
+}
+#menuDeroulant nav ul li ul li {
+    border-top: 1px solid #464646;
+    width: 100%;
+}
+#menuDeroulant nav li {
+    background: #ccc;
+}
+#menuDeroulant nav li a{
+    text-decoration: none;
+    color: #000;
+    padding: 4px 0 4px;
+    display: block;
+}
+#menuDeroulant ul{
+    text-align: center;
+}
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2{
+    display: block;
+    color: red;
+}
+
+
+/****************FIN LIEN & MENU******************/
+/***************FORMULAIRE*******************/
+form{
+    width: 60%;
+    background: #2c3e50;
+    margin: 0 auto;
+    padding: 20px;
+    color: #ecf0f1;
+    border-radius: 15px;
+}
+label{
+    margin:10px 0;
+    width: 50%;
+    display: inline-block;
+}
+textarea{
+    resize: none;
+}
+label[for="orange"], label[for="fraise"], label[for="poire"]{
+    width: 13%;
+}
+
+/***************FIN FORMULAIRE***************/
+/***************DEBUT MULTIMEDIA***************/
+.videoFond{
+    padding-left: 0;
+    padding-right: 0;
+}
+.videoFond video{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+.videoTexte{
+    position: relative;
+    width: 100%;
+    height: 500px;
+}
+.videoFond p{
+    position: absolute;
+    z-index: 2;
+    width: 500px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.60);
+    left: 250px;
+    top: 150px;
+    padding: 20px;
+    font-size: 120%;
+    border-radius: 10px;
+}
+
+iframe[src="https://www.youtube.com/embed/MHYWgf3VqoY"]{
+    width: 100%;
+}
+.audio{
+    text-align: center;
+}
+iframe[allowfullscreen]{
+    width: 100%;
+}
+
+/**************FIN MULTIMEDIA***************/
+/**************DEBUT ANIMATIONS*************/
+      /*****infoBulle*****/
+.infoBulle{
+    height: 250px;
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+    background: #444;
+    box-shadow: 0 0 50px #222 inset/*inset permet l'effet à l'intérieur de l'élément*/
+}
+.infoBulle p{
+    text-align: center;
+    padding-top: 30px;
+}
+.infoBulle a{
+    color: #ccc;
+    text-shadow: 0 -2px 0 black;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 5px 15px;
+}
+.infoBulle a:hover{
+    text-shadow: 0 1px 2px black;
+    background: rgba(0,0,0,.4);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .4);
+    color: #fff;
+}
+.infoBulle a span{
+    position: absolute;
+    padding: 15px;
+    margin-top: 23px;
+    margin-left: -35px;
+    background: rgba(0,0,0,.9);
+    opacity: 0;
+    color: #09c;
+    transform: scale(0) rotateZ(-12deg);
+    transition: .25s;
+    border-radius: 3px;
+    box-shadow: 0 0 2px rgba(0,0,0,.5);
+}
+.infoBulle a:hover span{
+    opacity: 1;
+    transform: scale(1) rotateZ(0);
+}
+.infoBulle a span:before{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 10px;
+    border-bottom: 6px solid rgba(0,0,0,.9);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+      /*****image grayscale & blur*****/
+.imgEffets{
+    width: 302px;
+    height: 320px;
+    margin: 70px auto;
+}
+.imgEffets li{
+    list-style: none;
+    float: left;
+    width: 141px;
+    height: 150px;
+    margin: 5px;
+}
+.imgEffets li:nth-child(3){
+    clear: both;
+}
+.imgEffets img{
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    box-shadow: 0 0 3px black;
+    /* cubic-bezier commence par 0 et se termine par 1 puis entre nous mettrons nos valeurs*/
+    transition: .5s cubic-bezier(0,3,.4,1);
+}
+.imgEffets li:hover img{
+    z-index: 2;
+    /* Scale = zoom */
+    transform: scale(1.5);
+    box-shadow: 0 0 10px black;
+}
+.imgEffets:hover li:not(:hover) img{
+    filter: grayscale(1) blur(5px);
+}
+     /******Rotation d'un menu CSS3*******/
+#menuRotate{
+    height: 360px;
+    width: 576px;
+    margin: 100px auto;
+    background: #627878;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid white;
+}
+#menuRotate .masque{
+    position: absolute;
+    z-index: 50;
+    width: 585px;
+    height: 135px;
+    top: 0;
+    left: 0;
+    background:linear-gradient(#324040,#627878);
+}
+#menuRotate .ombre{
+    position: absolute;
+    z-index: 40;
+    width: 300px;
+    height: 6px;
+    box-shadow: 0px 100px 3px black;
+    border-radius: 75px 75px 75px 75px / 3px 3px 3px 3px; /*rayon horizontaux / Rayon verticaux*/
+    top: 30px;
+    left: 142px;
+}
+#menuRotate dl{
+    position: relative;
+    top: 0;
+    left: 50%;
+    margin-left: -75px;
+    width: 150px;
+    height: 155px;
+    color: #324040;
+    text-align: center;
+    background: #04b3d2;
+    border-radius: 4px;
+    box-shadow: 0 0 6px rgba(0,0,0,0.7);
+    transform-origin: 50% 120px;
+    animation: bounceOut 0.7s ease-in-out;
+}
+#menuRotate dt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 23px;
+    padding-top: 5px;
+
+}
+#menuRotate dd{
+    transform: rotate(180deg);
+}
+#menuRotate dd a{
+    display: block;
+    height: 24px;
+    padding: 3px 0;
+    color: #324040;
+    text-decoration: none;
+}
+#menuRotate dd a:hover{
+    background: rgba(255,255,255,0.1);
+}
+#menuRotate dl:hover{
+    transform: rotate(-180deg);
+    animation: bounceIn 0.7s ease-in-out;
+}
+@keyframes bounceIn{
+    from{transform:rotate(0deg);}
+    75%{transform:rotate(-200deg);}
+    90%{transform:rotate(-175deg);}
+    to{transform:rotate(-180deg);}
+}
+@keyframes bounceOut{
+    from{transform:rotate(0deg);}
+    0%{transform:rotate(-180deg);}
+    10%{transform:rotate(-165deg);}
+    to{transform:rotate(-360deg);}
+}
+
+/**************FIN ANIMATIONS***************/

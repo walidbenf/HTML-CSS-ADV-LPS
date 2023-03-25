@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ma page Animation</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <meta name="description" content="Mes animations en HTML/CSS">
+        <meta charset="UTF-8">
+    </head>
+
+
+    <body>
+
+        <header>
+            <div id="logo">
+                <a href="#logo">
+                    <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                </a>
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div id="slogan"><h1>Mon premier site en HTML/CSS</h1></div>
+            <div id="social">
+                <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="clear"></div>
+        </header>
+
+        <nav>
+            <div class="ancreNav">
+                <a href="index.html">Structure</a>
+                <a href="texte.html">Texte</a>
+                <a href="selecteur.html">Selecteur</a>
+                <a href="image.html">Image</a>
+                <a href="position.html">Position</a>
+                <a href="zoning.html">Zoning</a>
+                <a href="tableau.html">Tableau</a>
+                <a href="liste.html">Liste</a>
+                <a href="lien_menu.html">Lien & menu</a>
+                <a href="formulaire.html">Formulaire</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="animation.html" class="activ">Animation</a>
+            </div>
+        </nav>
+        <main>
+            <h2>Animation</h2>
+            <section>
+                <h3>Infobulle</h3>
+                <div class="infoBulle">
+                    <p>
+                        <a href="#">Passer la souris ! <span>Salut je suis un popup</span></a>
+                    </p>
+                    <p>
+                        <a href="#">Ici aussi ! <span>Salut un autre popup</span></a>
+                    </p>
+                    <p>
+                        <a href="#">Une fois encore ! <span>Salut encore un popup</span></a>
+                    </p>
+                </div>
+            </section>
+            <section>
+                <h3>Effets de survol avec tansitions et filtres CSS</h3>
+                <ul class="imgEffets">
+                    <li><img src="img/survol_img1.jpg" alt=""></li>
+                    <li><img src="img/survol_img2.jpg" alt=""></li>
+                    <li><img src="img/survol_img3.jpg" alt=""></li>
+                    <li><img src="img/survol_img4.jpg" alt=""></li>
+                </ul>
+            </section>
+            <section>
+                <h3>Rotation d'un menu en CSS3</h3>
+                <article id="menuRotate">
+                    <dl class="menu">
+                        <dt class="btnRot">Partager</dt>
+                        <dd><a href="#">...</a></dd>
+                        <dd><a href="#">Delicious</a></dd>
+                        <dd><a href="#">Facebook</a></dd>
+                        <dd><a href="#">Twitter</a></dd>
+                    </dl>
+                    <div class="masque"></div>
+                    <div class="ombre"></div>
+                </article>
+            </section>
+            <div class="clear"></div>
+        </main>
+        <footer>
+            Réalisation d'un site HTML/CSS
+
+        </footer>
+    </body>
+
+
+</html>

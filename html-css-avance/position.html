@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ma page Position</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <meta name="description" content="Mes positions en HTML/CSS">
+        <meta charset="UTF-8">
+    </head>
+
+
+    <body>
+
+        <header>
+            <div id="logo">
+                <a href="#logo">
+                    <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                </a>
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div id="slogan"><h1>Mon premier site en HTML/CSS</h1></div>
+            <div id="social">
+                <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="clear"></div>
+        </header>
+
+        <nav>
+            <div class="ancreNav">
+                <a href="index.html">Structure</a>
+                <a href="texte.html">Texte</a>
+                <a href="selecteur.html">Selecteur</a>
+                <a href="image.html">Image</a>
+                <a href="position.html" class="activ">Position</a>
+                <a href="zoning.html">Zoning</a>
+                <a href="tableau.html">Tableau</a>
+                <a href="liste.html">Liste</a>
+                <a href="lien_menu.html">Lien & menu</a>
+                <a href="formulaire.html">Formulaire</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="animation.html">Animation</a>
+            </div>
+        </nav>
+        <main>
+            <h2>Position</h2>
+            <section>
+                <h3>Centrer un élément de type block</h3>
+                <div class="centre"></div>
+            </section>
+            <section>
+                <h3>Position Absolute</h3>
+                <p>Carré JAUNE ! Regarde en haut ! </p>
+                <div class="absolute"></div>
+            </section>
+            <section>
+                <h3>Position Relative</h3>
+                <div class="relative">
+                    <div></div>
+                </div>
+            </section>
+            <section>
+                <h3>Position fixed</h3>
+                <p>Bouton retour vers le haut</p>
+                <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+            </section>
+            <section>
+                <h3>Le pourcentage</h3>
+                <div class="trente">30%</div>
+                <div class="cinquante">50%</div>
+                <div class="cent">100%</div>
+            </section>
+
+            <section>
+                <h3>L'attribut Float</h3>
+                <div class="float">1</div>
+                <div class="float">2</div>
+                <div class="float">3</div>
+                <div class="float">4</div>
+                <div class="float clear">5</div>
+                <div class="float">6</div>
+                <div class="float">7</div>
+                <div class="float clear">8</div>
+                <div class="float">9</div>
+                <div class="dernier clear">10</div>
+            </section>
+            <section>
+                <h3>Exercice sur le Float</h3>
+                <div class="zone"></div>
+                <div class="zone1"></div>
+                <div class="zone2"></div>
+                <div class="zone3"></div>
+                <div class="zone4"></div>
+                <div class="zone clear"></div>
+            </section>
+            <section>
+                <h3>Flexbox</h3>
+                <!-- Ce place en fonction de l'élément parent -->
+                <article class="flex">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                </article>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+
+</html>

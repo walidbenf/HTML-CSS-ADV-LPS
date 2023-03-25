@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ma page tableaux</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <meta name="description" content="Tableau en HTML/CSS">
+        <meta charset="UTF-8">
+    </head>
+
+
+    <body>
+
+        <header>
+            <div id="logo">
+                <a href="#logo">
+                    <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                </a>
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div id="slogan"><h1>Mon premier site en HTML/CSS</h1></div>
+            <div id="social">
+                <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="clear"></div>
+        </header>
+
+        <nav>
+            <div class="ancreNav">
+                <a href="index.html">Structure</a>
+                <a href="texte.html">Texte</a>
+                <a href="selecteur.html">Selecteur</a>
+                <a href="image.html">Image</a>
+                <a href="position.html">Position</a>
+                <a href="zoning.html">Zoning</a>
+                <a href="tableau.html" class="activ">Tableau</a>
+                <a href="liste.html">Liste</a>
+                <a href="lien_menu.html">Lien & menu</a>
+                <a href="formulaire.html">Formulaire</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="animation.html">Animation</a>
+            </div>
+        </nav>
+        <main>
+            <h2>Tableau</h2>
+            <section class="tableau">
+            <table>
+                <caption><i class="fa fa-plane" aria-hidden="true"></i>Vols Paris Rome</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <td>02/08/2017</td>
+                        <td>03/08/2017</td>
+                        <td>05/08/2017</td>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <th></th>
+                        <td>02/08/2017</td>
+                        <td>03/08/2017</td>
+                        <td>05/08/2017</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <th rowspan="2">Air France</th>
+                        <td>Départ 10h - Arrivé 13h</td>
+                        <td>Départ 15h - Arrivé 18h</td>
+                        <td>Départ 17h - Arrivé 20h</td>
+                    </tr>
+                    <tr>
+                        <td>200€</td>
+                        <td>180€</td>
+                        <td>170€</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Alitalia</th>
+                        <td>Départ 6h - Arrivé 9h</td>
+                        <td>Départ 13h - Arrivé 16h</td>
+                        <td>Départ 21h - Arrivé 00h</td>
+                    </tr>
+                    <tr>
+                        <td>120€</td>
+                        <td>250€</td>
+                        <td>100€</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+
+</html>

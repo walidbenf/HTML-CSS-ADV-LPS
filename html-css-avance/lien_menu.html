@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Ma page lien</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+        <meta name="description" content="Mes lien en HTML/CSS">
+        <meta charset="UTF-8">
+    </head>
+
+
+    <body>
+
+        <header>
+            <div id="logo">
+                <a href="#logo">
+                    <button type="button"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></button>
+                </a>
+                    <img src="img/logo.png" alt="logo">
+            </div>
+            <div id="slogan"><h1>Mon premier site en HTML/CSS</h1></div>
+            <div id="social">
+                <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                </a>
+            </div>
+
+            <div class="clear"></div>
+        </header>
+
+        <nav>
+            <!--La div class est obsolete a ne pas prendre en compte flemme de supprimer-->
+            <div class="ancreNav">
+                <a href="index.html">Structure</a>
+                <a href="texte.html">Texte</a>
+                <a href="selecteur.html">Selecteur</a>
+                <a href="image.html">Image</a>
+                <a href="position.html">Position</a>
+                <a href="zoning.html">Zoning</a>
+                <a href="tableau.html">Tableau</a>
+                <a href="liste.html">Liste</a>
+                <a href="lien_menu.html" class="activ">Lien & menu</a>
+                <a href="formulaire.html">Formulaire</a>
+                <a href="multimedia.html">Multimedia</a>
+                <a href="animation.html">Animation</a>
+            </div>
+        </nav>
+        <main>
+            <h2>Liens & menus</h2>
+            <div class="ancre">
+                <a href="#lien">Les liens</a>
+                <a href="#menu">Menu</a>
+                <a href="#menuDeroulant">Menu déroulant</a>
+            </div>
+            <section id="lien">
+                <h3>Les liens</h3>
+                <!--Dans le lien nous aurons aussi (title="xxx") pour ouvrir fenêtre d'info au passage de la souris sur le lien et (target="_blank") pour envoyer sur un autre onglet"-->
+                <a href="https://codepen.io" title="Se rendre sur le site de CodePen" target="_blank">CodePen</a> is a social development environment for front-end designers and developers.<br>
+                <a href="http://www.google.fr" target="_blank">Google</a> le moteur de recherche.<br>
+                <a href="fichier/cv.doc">Télécharger mon CV</a><br>
+                <!-- On peut ajouter juste un download dans le lien pour rendre téléchargeable le fichier -->
+                <a href="fichier/cv.pdf" target="_blank">Voir mon CV</a><br>
+                <!-- Pour imprimer ma page -->
+                <a href="#" onclick="window.print()">Imprimer la page</a><br>
+                <!--Pour rendre cliquable une image et renvoyer sur le lien inséré dessus-->
+                <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.ico" alt=""></a><br>
+                <!-- Inséré le lien juste dans " ici " qui renvoi sur une autre page de mon site -->
+                Cliquer <a href="index.html">ici</a> pour vous rendre sur la page.
+            </section>
+            <section id="menu">
+                <h3>Les menu</h3>
+                <nav>
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Parcours</a></li>
+                        <li><a href="#">Réalisations</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+            <section id="menuDeroulant">
+                <h3>Les menu déroulant</h3>
+                <nav>
+                    <ul class="niveau1">
+                        <li><a href="#">Accueil</a></li>
+                        <li class="sousMenu"><a href="#">Formation</a>
+                            <ul class="niveau2">
+                                <li><a href="#">Etudiants</a></li>
+                                <li><a href="#">Emploi du temps</a></li>
+                                <li><a href="#">Recherche d'emploi</a></li>
+                                <li><a href="#">Documents</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Informations</a></li>
+                        <li class="sousMenu"><a href="#">Cours</a>
+                            <ul class="niveau2">
+                                <li><a href="#">Internet</a></li>
+                                <li><a href="#">HTML/CSS</a></li>
+                                <li><a href="#">CMS</a></li>
+                                <li><a href="#">Stats</a></li>
+                                <li><a href="#">Réseaux sociaux</a></li>
+                                <li><a href="#">Référencement</a></li>
+                                <li><a href="#">Marketing</a></li>
+                                <li><a href="#">Cachier des charges</a></li>
+                                <li><a href="#">Photoshop</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Mon CV</a></li>
+                    </ul>
+                </nav>
+
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+
+</html>

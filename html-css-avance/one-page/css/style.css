@@ -1,0 +1,34 @@
+.fm {
+  color: #2E4125;
+}
+
+.nav li a {}
+
+#team {
+  margin-top: 100px;
+}
+
+.ot {
+  text-align: center !important;
+}
+
+p {
+  text-align: center;
+}
+
+.lr {
+  text-align: center;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+  margin: auto;
+  padding: auto;
+}
+
+/*#carouselExampleIndicators {
+  height:500px;
+  width:300px;
+  margin: auto;
+  padding: auto;
+}
